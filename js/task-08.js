@@ -10,9 +10,9 @@ loginForm.addEventListener('submit', (event) => {
             password: passwordInput.value,
         };
         console.log(formData);
+        event.currentTarget.reset();
     } else {
         alert('Всі поля повинні бути заповнені'); 
     }
-
-    event.currentTarget.reset();
 });
+
